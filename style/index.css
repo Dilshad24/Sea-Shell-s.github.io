@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Concert+One&family=Courgette&family=Indie+Flower&family=Island+Moments&family=Permanent+Marker&family=Vujahday+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Island Moments', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Vujahday Script', cursive; */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(17, 17, 17);
+}
+.header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.623);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+.logo {
+  margin-left: 3%;
+}
+.logo img {
+  height: 90px;
+}
+.detail {
+  margin-right: 3%;
+  text-decoration: none;
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  gap: 5%;
+}
+.detail a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Indie Flower", cursive;
+  transition: ease-in-out 0.5s;
+}
+.detail a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.section1 {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+  padding-top: 10px;
+}
+
+.productsection {
+  aspect-ratio: 250/250;
+  position: absolute;
+  width: 45%;
+  top: 10%;
+  right: 5%;
+  background-image: url("../images/backgrounds/productbg2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+.productimgandslogan {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.productimgandslogan img {
+  margin-top: 12%;
+  height: 65%;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  z-index: 1;
+}
+.productimgandslogan img:hover {
+  margin-top: 12.5%;
+  height: 66%;
+}
+.productimgandslogan:hover .slogan{
+  top: 15%;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+.slogan {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 280%;
+  width: 80%;
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(163, 163, 163);
+  transition: ease-in-out .5s;
+  
+}
+.detailsection {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 500px;
+  padding: 10px;
+}
+.detailsection h1 {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 35px;
+}
+.detailsection p {
+  padding-top: 20px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  text-align: justify;
+  font-size: 13px;
+  width: 450px;
+  line-height: 20px;
+  word-spacing: 5px;
+}
+
+.section2 {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+  padding-top: 10px;
+}
+
+.productsection1 {
+  aspect-ratio: 250/250;
+  position: absolute;
+  width: 45%;
+  top: 25px;
+  left: 5%;
+  background-image: url("../images/backgrounds/productbg3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+.detailsection1 {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 500px;
+  padding: 10px;
+}
+.detailsection1 h1 {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 35px;
+}
+.detailsection1 p {
+  padding-top: 20px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  text-align: justify;
+  font-size: 13px;
+  width: 450px;
+  line-height: 20px;
+  word-spacing: 5px;
+}
+
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+@media screen and (max-width: 1000px) {
+  .section1 {
+    padding-top: 0px;
+    height: 60vh;
+  }
+  .productsection {
+    width: 50%;
+    top: 20%;
+    right: 0%;
+  }
+  .slogan {
+    font-size: 200%;
+  }
+  .detailsection {
+    top: 30%;
+    left: 5%;
+    width: 300px;
+    padding: 10px;
+  }
+  .detailsection h1 {
+    font-size: 25px;
+  }
+  .detailsection p {
+    padding-top: 20px;
+    font-size: 13px;
+    width: 300px;
+    line-height: 18px;
+  }
+
+  .section2 {
+    padding-top: 0px;
+    height: 60vh;
+  }
+  .productsection1 {
+    width: 50%;
+    top: 20%;
+    left: 0%;
+  }
+  .slogan {
+    font-size: 200%;
+  }
+
+  .detailsection1 {
+    top: 30%;
+    right: 5%;
+    width: 300px;
+    padding: 10px;
+  }
+  .detailsection1 h1 {
+    font-size: 25px;
+  }
+  .detailsection1 p {
+    padding-top: 20px;
+    font-size: 13px;
+    width: 300px;
+    line-height: 18px;
+  }
+}
+
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+@media screen and (max-width: 750px) {
+  .section1 {
+    padding-top: 0px;
+    height: 80vh;
+    min-height: 550px;
+  }
+  .productsection {
+    width: 65%;
+    top: 5%;
+    right: 20%;
+  }
+  .slogan {
+    font-size: 200%;
+  }
+  .detailsection {
+    top: 70%;
+    left: 5%;
+    width: 100%;
+    padding: 0px;
+  }
+  .detailsection h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-left: -10%;
+  }
+  .detailsection p {
+    padding-top: 20px;
+    font-size: 13px;
+    width: 95%;
+    line-height: 18px;
+  }
+
+  .section2 {
+    padding-top: 0px;
+    height: 70vh;
+    min-height: 500px;
+  }
+  .productsection1 {
+    width: 65%;
+    top: 6%;
+    left: 20%;
+  }
+  .slogan {
+    font-size: 200%;
+  }
+
+  .detailsection1 {
+    top: 80%;
+    left: 5%;
+    width: 100%;
+    padding: 0px;
+  }
+  .detailsection1 h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-left: -10%;
+  }
+  .detailsection1 p {
+    padding-top: 20px;
+    font-size: 13px;
+    width: 95%;
+    line-height: 18px;
+  }
+}
+
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+@media screen and (max-width: 550px) {
+  .section1 {
+    padding-top: 0px;
+    height: 75vh;
+    min-height: 550px;
+  }
+  .productsection {
+    width: 69%;
+    top: 8%;
+    right: 15%;
+  }
+  .slogan h1{
+    font-size: 180%;
+  }
+  .detailsection {
+    top: 65%;
+    left: 5%;
+    width: 100%;
+    padding: 0px;
+  }
+  .detailsection h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-left: -10%;
+  }
+  .detailsection p {
+    padding-top: 20px;
+    font-size: 13px;
+    width: 95%;
+    line-height: 18px;
+  }
+
+  .section2 {
+    padding-top: 0px;
+    height: 75vh;
+    min-height: 500px;
+  }
+  .productsection1 {
+    width: 65%;
+    top: 6%;
+    left: 20%;
+  }
+  .slogan {
+    font-size: 180%;
+  }
+
+  .detailsection1 {
+    top: 65%;
+    left: 5%;
+    width: 100%;
+    padding: 0px;
+  }
+  .detailsection1 h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-left: -10%;
+  }
+  .detailsection1 p {
+    padding-top: 20px;
+    font-size: 13px;
+    width: 95%;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+.header {
+  height: 60px;
+}
+.logo {
+  margin-left: 2%;
+}
+.logo img {
+  height: 60px;
+}
+.detail {
+  margin-right: 3%;
+  gap: 6%;
+}
+.detail a {
+  font-size: 17px;
+}
+  .section1 {
+    padding-top: 0px;
+    height: 73vh;
+    min-height: 600px;
+  }
+  .productsection {
+    width: 80%;
+    top: 8%;
+    right: 10%;
+  }
+  .slogan h1{
+    font-size: 190%;
+  }
+  .detailsection {
+    top: 60%;
+    left: 5%;
+    width: 100%;
+    padding: 0px;
+  }
+  .detailsection h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-left: -10%;
+  }
+  .detailsection p {
+    padding-top: 20px;
+    font-size: 13px;
+    width: 95%;
+    line-height: 18px;
+  }
+
+  .section2 {
+    padding-top: 0px;
+    height: 73vh;
+    min-height: 600px;
+  }
+  .productsection1 {
+    width: 80%;
+    top: 6%;
+    left: 10%;
+  }
+  .slogan {
+    font-size: 190%;
+  }
+
+  .detailsection1 {
+    top: 60%;
+    left: 5%;
+    width: 100%;
+    padding: 0px;
+  }
+  .detailsection1 h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-left: -10%;
+  }
+  .detailsection1 p {
+    padding-top: 20px;
+    font-size: 13px;
+    width: 95%;
+    line-height: 18px;
+  }
+}
