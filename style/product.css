@@ -1,0 +1,237 @@
+.slidersection {
+  padding-top: 80px;
+}
+.sliderimagecontainer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sliderimagecontainer img{
+    height: 100%;    
+}
+.jssor1 {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  width: 980px;
+  height: 380px;
+  overflow: hidden;
+  visibility: hidden;
+}
+.jssorl-004-double-tail-spin {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.jssorl-004-double-tail-spin img {
+  margin-top: -19px;
+  position: relative;
+  top: 50%;
+  width: 38px;
+  height: 38px;
+}
+.jssorl-004-double-tail-spin img {
+  animation-name: jssorl-004-double-tail-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.slides {
+  cursor: default;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 980px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.jssorb031 {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.i {
+  width: 13px;
+  height: 13px;
+}
+
+.jssora0511 {
+  width: 55px;
+  height: 55px;
+  top: 0px;
+  left: 25px;
+  background-color: rgba(0, 0, 0, 0.164);
+}
+.jssora0512 {
+  width: 55px;
+  height: 55px;
+  top: 0px;
+  right: 25px;
+  background-color: rgba(0, 0, 0, 0.164);
+}
+.productpricesection{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.pdescriptionsection{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40PX;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid white;
+    padding: 20PX;
+    border-radius: 5PX;
+    margin-bottom: 20px;
+    
+}
+.pdescriptionsection h1{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.discriptiontable{
+    
+}
+.productdetail{
+    display: flex;
+    width: 400px;
+}
+.productdetail p{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+
+
+@keyframes jssorl-004-double-tail-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*jssor slider bullet skin 031 css*/
+.jssorb031 {
+  position: absolute;
+}
+.jssorb031 .i {
+  position: absolute;
+  cursor: pointer;
+}
+.jssorb031 .i .b {
+  fill: #000;
+  fill-opacity: 0.6;
+  stroke: #fff;
+  stroke-width: 1600;
+  stroke-miterlimit: 10;
+  stroke-opacity: 0.8;
+}
+.jssorb031 .i:hover .b {
+  fill: #fff;
+  fill-opacity: 1;
+  stroke: #000;
+  stroke-opacity: 1;
+}
+.jssorb031 .iav .b {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1600;
+  fill-opacity: 0.6;
+}
+.jssorb031 .i.idn {
+  opacity: 0.3;
+}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.jssora051 .a {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 360;
+  stroke-miterlimit: 10;
+}
+.jssora051:hover {
+  opacity: 0.8;
+}
+.jssora051.jssora051dn {
+  opacity: 0.5;
+}
+.jssora051.jssora051ds {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+
+@media screen and (max-width: 900px) {
+
+.productpricesection h1,h2{
+    font-size: 19px;
+}
+.pdescriptionsection h1{
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+
+
+}
+
+@media screen and (max-width: 600px) {
+.productpricesection h1,h2{
+    font-size: 17px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.pdescriptionsection{
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10PX;
+    margin-bottom: 20px;
+    
+}
+
+.productpricesection h1,h2{
+    font-size: 15px;
+}
+.pdescriptionsection h1{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .productpricesection h1,h2{
+    font-size: 13px;
+}
+.productdetail{
+    display: flex;
+    width: 340px;
+}
+.productdetail p{
+    width: 170px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+}

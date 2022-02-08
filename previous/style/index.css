@@ -12,11 +12,9 @@ font-family: 'Vujahday Script', cursive; */
 * {
   padding: 0;
   margin: 0;
-  -webkit-tap-highlight-color: transparent;
 }
 body {
   background-color: rgb(17, 17, 17);
-  position: relative;
 }
 .header {
   height: 80px;
@@ -83,7 +81,7 @@ body {
   position: relative;
 }
 .productimgandslogan img {
-  margin-top: 13%;
+  margin-top: 12%;
   height: 65%;
   cursor: pointer;
   transition: ease-in-out 0.5s;
@@ -93,22 +91,9 @@ body {
   margin-top: 12.5%;
   height: 66%;
 }
-.productimgandslogan:hover .slogan {
+.productimgandslogan:hover .slogan{
   top: 15%;
-  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px,
-    rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px,
-    rgb(0, 0, 0) 0.705713px 2.91581px 0px,
-    rgb(0, 0, 0) -0.287171px 2.98622px 0px,
-    rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px,
-    rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px,
-    rgb(0, 0, 0) -2.94502px -0.571704px 0px,
-    rgb(0, 0, 0) -2.59586px -1.50383px 0px,
-    rgb(0, 0, 0) -1.96093px -2.27041px 0px,
-    rgb(0, 0, 0) -1.11013px -2.78704px 0px,
-    rgb(0, 0, 0) -0.137119px -2.99686px 0px,
-    rgb(0, 0, 0) 0.850987px -2.87677px 0px,
-    rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px,
-    rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
 }
 
 .slogan {
@@ -121,8 +106,8 @@ body {
   text-align: center;
   font-family: sans-serif;
   color: rgb(163, 163, 163);
-  transition: ease-in-out 0.5s;
-  z-index: -1;
+  transition: ease-in-out .5s;
+  
 }
 .detailsection {
   position: absolute;
@@ -188,141 +173,6 @@ body {
   width: 450px;
   line-height: 20px;
   word-spacing: 5px;
-}
-
-.conatctcontainer {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
-  z-index: 6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-.conatctcard {
-  position: relative;
-  height: 400px;
-  width: 600px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-    font-size: 140%;
-}
-#conatctcardcross {
-  position: absolute;
-  height: 20px;
-  right: 40px;
-  top: 40px;
-  cursor: pointer;
-}
-
-.aboutuscontainer {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
-  z-index: 6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-.aboutuscard {
-  position: relative;
-  height: 400px;
-  width: 600px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#aboutuscardcross {
-  position: absolute;
-  height: 20px;
-  right: 40px;
-  top: 40px;
-  cursor: pointer;
-}
-.aboutuscard p{
-  width: 80%;
-  text-align: justify;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.footer {
-  background-color: rgb(255, 255, 255);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 30px;
-}
-
-.footer a {
-  text-decoration: none;
-  color: rgb(175, 0, 0);
-  transition: ease-in-out 0.5s;
-  margin-top: 10px;
-}
-.footer a {
-  font-size: 15px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-.footer a:hover {
-  color: #000;
-}
-
-.fpart1 {
-  display: flex;
-  gap: 10%;
-}
-.fpart1 p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.fpart1 a {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.conatctmode h2 {
-  margin-bottom: 10px;
-}
-.fpart2 {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid black;
-}
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  gap: 5px;
-}
-.copyright img {
-  height: 30px;
-}
-.fpart2p {
-  font-size: 15px;
-  text-align: justify;
-}
-.privese{
-  display: flex;
-  gap: 15px;
 }
 
 /*=============================================================================================*/
@@ -407,7 +257,7 @@ body {
   .detailsection {
     top: 70%;
     left: 5%;
-    width: 95%;
+    width: 100%;
     padding: 0px;
   }
   .detailsection h1 {
@@ -439,7 +289,7 @@ body {
   .detailsection1 {
     top: 80%;
     left: 5%;
-    width: 95%;
+    width: 100%;
     padding: 0px;
   }
   .detailsection1 h1 {
@@ -469,12 +319,13 @@ body {
     top: 8%;
     right: 15%;
   }
-  .slogan h1 {
+  .slogan h1{
     font-size: 180%;
   }
   .detailsection {
     top: 65%;
     left: 5%;
+    width: 100%;
     padding: 0px;
   }
   .detailsection h1 {
@@ -506,6 +357,7 @@ body {
   .detailsection1 {
     top: 65%;
     left: 5%;
+    width: 100%;
     padding: 0px;
   }
   .detailsection1 h1 {
@@ -519,81 +371,43 @@ body {
     width: 95%;
     line-height: 18px;
   }
-
-  .fpart1 {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    font-size: 70%;
-  }
-  .footer h2{
-    font-size: 17px;
-    font-weight: bold;
-  }
-  .footer h3{
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-  .fpart2 {
-  margin-top: 10px;
-  padding-top: 20px;
-  border-top: 1px solid black;
-}
-  .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    gap: 5px;
-  }
-  .copyright img {
-    height: 20px;
-  }
-  .copyright p {
-    font-size: 14px;
-  }
-  .fpart2p {
-    font-size: 12px;
-  }
 }
 
 @media screen and (max-width: 450px) {
-  .header {
-    height: 60px;
-  }
-  .logo {
-    margin-left: 2%;
-  }
-  .logo img {
-    height: 60px;
-  }
-  .detail {
-    margin-right: 3%;
-    gap: 6%;
-  }
-  .detail a {
-    font-size: 17px;
-  }
+.header {
+  height: 60px;
+}
+.logo {
+  margin-left: 2%;
+}
+.logo img {
+  height: 60px;
+}
+.detail {
+  margin-right: 3%;
+  gap: 6%;
+}
+.detail a {
+  font-size: 17px;
+}
   .section1 {
     padding-top: 0px;
     height: 73vh;
     min-height: 600px;
-    overflow: hidden;
   }
   .productsection {
-    width: 90%;
+    width: 80%;
     top: 8%;
     right: 10%;
   }
-  .slogan h1 {
+  .slogan h1{
     font-size: 190%;
   }
   .detailsection {
-    top: 68%;
+    top: 60%;
     left: 5%;
+    width: 100%;
     padding: 0px;
-    margin-right: -10px;
   }
   .detailsection h1 {
     font-size: 25px;
@@ -613,7 +427,7 @@ body {
     min-height: 600px;
   }
   .productsection1 {
-    width: 90%;
+    width: 80%;
     top: 6%;
     left: 10%;
   }
@@ -622,8 +436,9 @@ body {
   }
 
   .detailsection1 {
-    top: 68%;
+    top: 60%;
     left: 5%;
+    width: 100%;
     padding: 0px;
   }
   .detailsection1 h1 {
